@@ -1,0 +1,84 @@
+/**
+ * Theme : gakki
+ * Author: konngo
+ *
+ */
+
+configuration {
+	display-drun: "";
+	display-run: "";
+	display-window: "";
+	display-ssh: "~#";
+	show-icons: true;
+	sidebar-mode: false;
+	font: "Source Code Pro 15";
+	background-color:transparent;
+}
+
+*{
+	dalishihui:#C5CCD0;
+	lv:#469673;
+	lan:#0A6BB0;
+	fenbai:#FBF2E4;
+	backgroundcolor:transparent;
+	background-color:#FBF2E4;
+}
+
+window {
+	location: center;
+	anchor: center;
+	height: 50%;
+	width: 30%;
+	children: [mainbox];
+	hide-scrollbar: true;
+	background-color:@fenbai;
+}
+
+mainbox {
+	spacing: 0.2em;
+	children: [inputbar, listview];
+	padding:60px;
+	background-color:@fenbai;
+}
+
+
+
+listview {
+	spacing: 0.6em;
+	dynamic: false;
+	cycle: true;
+	padding: 0px 3px 0px 3px;	
+	background-color:@fenbai;
+}
+
+inputbar {
+	text-align:center;
+	border-spacing: 5px 0 0 0;
+	font:"Source Code Pro 19";
+	background-color:@fenbai;
+}
+
+entry{
+	padding: 2px;
+	background-color:@fenbai;
+	font-size:30px;
+}
+
+
+prompt{
+	padding: 5px;
+	border: 1px;
+	border-radius: 50%;
+	background-color:@fenbai;
+}
+
+
+element {
+	border-radius: 50%;
+	font:"Source Code Pro 13";
+	background-color:@fenbai;
+}
+
+element  selected {
+	background-color:@lv;
+}
