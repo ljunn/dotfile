@@ -1,0 +1,30 @@
+note:
+install : 
+git
+yay
+wegt
+ 
+
+files:
+[archlinuxcn]
+/etc/pacman.conf
+
+# 安装google输入法
+sudo pacman -S fcitx fcitx-im 
+sudo pacman -S fcitx-googlepinyin
+
+vim .xprofile
+
+```
+export LC_ALL=zh_CN.UTF-8
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcixt
+export XMODIFIERS="@im=fcitx"
+
+fcitx &
+```
+
+reboot
+
+重启后打开google输入法
+
